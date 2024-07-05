@@ -1,0 +1,14 @@
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/dto/NewUtenteDataDto.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/dto/UtenteGruppoDto.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/Gruppi.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/Gruppo.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/Utente.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/UtenteStato.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/compositeKeys/G_U_KEY.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/initializer/DataInitializer.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/project/ListaUtentiFromGroupDto.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/repositories/GruppiRepository.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/repositories/GruppoRepository.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/repositories/UtenteRepository.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/resource/GruppiResource.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/resource/UtenteResource.java
