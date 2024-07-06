@@ -1,6 +1,8 @@
 package resource;
 
+import dto.CambioStatoDto;
 import dto.NewUtenteDataDto;
+import io.quarkus.logging.Log;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
@@ -33,7 +35,7 @@ public class UtenteResource {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                     .entity("Codice Fiscale troppo" + (cf.length() < 16 ? " corto." : " lungo.")).build();
 
-        if(utenteRepository.find("codiceFiscale", cf).firstResult() != null)
+        if(utenteRepository.find("codiceFiscale", cf).count() != 0)
             return Response.status(Response.Status.CONFLICT)
                     .entity("Codice Fiscale già registrato.").build();
 
@@ -41,6 +43,14 @@ public class UtenteResource {
 
         return Response.ok("Utente creato con successo").build();
 
+    }
+
+    @PUT
+    @Path("/cambia_stato/{id}")
+    @Transactional
+    public Response cambiaStatoUtente(Long id, CambioStatoDto cambioStatoDto){
+        String esito = utenteRepository.cambioStatoUtente(id, cambioStatoDto.codice);
+        return Response.ok(esito).build();
     }
 
 }

@@ -1,0 +1,15 @@
+initializer/DataInitializer.class
+dto/UtenteGruppoDto.class
+entities/UtenteStato.class
+repositories/GruppiRepository.class
+repositories/GruppoRepository.class
+entities/Utente.class
+resource/GruppiResource.class
+entities/Gruppo.class
+project/ListaUtentiFromGroupDto.class
+repositories/UtenteRepository.class
+entities/Gruppi.class
+dto/NewUtenteDataDto.class
+entities/compositeKeys/G_U_KEY.class
+dto/CambioStatoDto.class
+resource/UtenteResource.class

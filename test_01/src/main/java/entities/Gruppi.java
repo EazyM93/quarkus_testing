@@ -1,11 +1,12 @@
 package entities;
 
+import entities.compositeKeys.G_U_KEY;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "gruppi")
-@IdClass(Gruppi.class)
+@IdClass(G_U_KEY.class)
 public class Gruppi extends PanacheEntityBase {
 
     @Id
