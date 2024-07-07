@@ -5,16 +5,16 @@ import entities.UtenteStato;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
-public class ListaUtentiFromGroupDto {
+public class UtenteFromGroupDto {
 
-    public Long id;
+    public Long idUtente;
     public String codiceFiscale;
     public String nome;
     public String cognome;
     public UtenteStato stato;
 
-    public ListaUtentiFromGroupDto(Utente utente) {
-        this.id = utente.id;
+    public UtenteFromGroupDto(Utente utente) {
+        this.idUtente = utente.idUtente;
         this.codiceFiscale = utente.codiceFiscale;
         this.nome = utente.nome;
         this.cognome = utente.cognome;

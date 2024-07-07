@@ -6,9 +6,7 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import org.hibernate.HibernateException;
-import org.hibernate.exception.ConstraintViolationException;
-import project.ListaUtentiFromGroupDto;
+import project.UtenteFromGroupDto;
 import repositories.GruppiRepository;
 
 import java.util.List;
@@ -39,9 +37,9 @@ public class GruppiResource {
     @GET
     @Path("/{sigla}/utenti")
     public Response getGruppo(@PathParam("sigla") String sigla){
-        List<ListaUtentiFromGroupDto> utenti = gruppiRepository
+        List<UtenteFromGroupDto> utenti = gruppiRepository
                 .find("gruppo.sigla", sigla)
-                .project(ListaUtentiFromGroupDto.class)
+                .project(UtenteFromGroupDto.class)
                 .list();
         return Response.ok(utenti).build();
     }

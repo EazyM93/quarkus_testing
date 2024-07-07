@@ -9,7 +9,7 @@ public class UtenteStato extends PanacheEntityBase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    public Long idStato;
 
     @Column(name = "stato")
     public String nome;

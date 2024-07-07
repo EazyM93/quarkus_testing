@@ -7,7 +7,9 @@
 /Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/UtenteStato.java
 /Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/entities/compositeKeys/G_U_KEY.java
 /Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/initializer/DataInitializer.java
-/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/project/ListaUtentiFromGroupDto.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/project/DatiElaboratiDto.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/project/NomeCognomeDto.java
+/Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/project/UtenteFromGroupDto.java
 /Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/repositories/GruppiRepository.java
 /Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/repositories/GruppoRepository.java
 /Users/eazymbook/projects/quarkus_testing/test_01/src/main/java/repositories/UtenteRepository.java

@@ -9,7 +9,7 @@ public class Gruppo extends PanacheEntityBase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    public Long idGruppo;
     
     @Column(name = "nome", nullable = false)
     public String nome;

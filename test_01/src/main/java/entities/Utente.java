@@ -9,7 +9,7 @@ public class Utente extends PanacheEntityBase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    public Long idUtente;
 
     @Column(name = "codice_fiscale", unique = true, nullable = false)
     public String codiceFiscale;
